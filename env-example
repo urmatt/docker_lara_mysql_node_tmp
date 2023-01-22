@@ -1,0 +1,50 @@
+# * Laravel 9
+# * php 8.2
+# * phpMyAdmin
+# * XDebug log
+# * mariadb-client intead of mysql-client
+# * Localtime Asia/Dhaka
+
+### common ##############
+TIMEZONE=Asia/Dhaka
+LOCALE=en
+
+
+### app ##############
+PHP_VERSION=8.2
+
+APP_NAME=YOR_PROJECT_NAME
+APP_CONTAINER_PATH=/var/www
+
+LARAVEL_VERSION=9
+LARAVEL_SESSION_DRIVER=mysql
+LARAVEL_IDE_HELPER=true
+
+XDEBUG_REMOTE_HOST=YOUR_IP
+XDEBUG_DEBUG_LEVEL=10
+XDEBUG_IDEKEY=vsc
+XDEBUG_LOGS=/dev/stdout
+
+### nginx ##############
+
+NGINX_HOST_HTTP_PORT=80
+NGINX_HOST_HTTPS_PORT=4443
+
+
+### mysql ##############
+
+MYSQL_VERSION=8.0
+MYSQL_DATABASE=test
+MYSQL_USER=admin
+MYSQL_PASSWORD=secret
+MYSQL_ROOT_PASSWORD=root
+MYSQL_HOST_PORT=33061
+
+
+### node ##############
+NODE_VERSION=18
+NODE_APP_CONTAINER_PATH=/var/www
+
+
+### phpMyAdmin #########
+PHPMA_PORT=3003
