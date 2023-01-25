@@ -41,6 +41,7 @@ services:
 
   db:
     container_name: db
+    user: "1000:50"
     build:
       context: ./mysql
       args:
