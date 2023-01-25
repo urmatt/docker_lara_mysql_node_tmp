@@ -2,6 +2,7 @@ version: '3'
 
 services:
   app:
+    container_name: app
     build:
       context: ./app
       args:
@@ -23,6 +24,7 @@ services:
       - db
   
   nginx:
+    container_name: nginx
     build:
       context: ./nginx
       args:
@@ -38,6 +40,7 @@ services:
       - app
 
   db:
+    container_name: db
     build:
       context: ./mysql
       args:
