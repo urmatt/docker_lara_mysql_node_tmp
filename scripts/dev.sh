@@ -13,7 +13,7 @@ setup_laravel_ide_helper () {
 
 edit_laravel_dotenv () {
     app_name="s/\(APP_NAME\)=.*/\1=$APP_NAME/g"
-    db_host="s/\(DB_HOST\)=.*/\1=mysql/g"
+    db_host="s/\(DB_HOST\)=.*/\1=$DB_HOST/g"
     db_database="s/\(DB_DATABASE\)=.*/\1=$MYSQL_DATABASE/g"
     db_user="s/\(DB_USERNAME\)=.*/\1=$MYSQL_USER/g"
     db_password="s/\(DB_PASSWORD\)=.*/\1=$MYSQL_PASSWORD/g"
